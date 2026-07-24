@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "romashki_audio_notebook"
+version = "0.0.3"
+dependencies = [
+  "PyQt5",
+  "pyaudio",
+  "send2trash"
+]
+requires-python = ">=3.11"
+authors = [
+  {name = "Nikita Mamay", email = "nikitamamay@mail.ru"},
+]
+maintainers = [
+  {name = "Nikita Mamay", email = "nikitamamay@mail.ru"},
+]
+description = "Simple GUI for whisper.cpp."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICEN[CS]E.*"]
+keywords = []
+classifiers = [
+  "Programming Language :: Python :: 3",
+]
+
+[project.optional-dependencies]
+linux = [
+  "dbus-python"
+]
+
+[project.urls]
+Repository = "https://github.com/nikitamamay/romashki-audio-notebook"
